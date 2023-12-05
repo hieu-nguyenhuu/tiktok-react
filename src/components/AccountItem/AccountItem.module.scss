@@ -1,0 +1,51 @@
+.wrapper {
+  padding: 9px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.search-avatar {
+  width: 36px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .checked {
+    padding-left: 10px;
+    color: #1693a3;
+  }
+}
+
+.username {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(22, 24, 35, 0.5);
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

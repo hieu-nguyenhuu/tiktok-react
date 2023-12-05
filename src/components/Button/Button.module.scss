@@ -1,0 +1,120 @@
+.wrapper {
+  padding: 8px 16px;
+  min-width: 100px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-family: 'ProximaNova', sans-serif;
+
+  + .wrapper {
+    margin-left: 16px;
+  }
+  &.disable {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &.select {
+    margin-left: 0px;
+  }
+  &.nav {
+    margin-left: 0px;
+  }
+}
+
+.primary {
+  background-color: var(--primary);
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), rgb(254, 44, 85);
+  }
+  &:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), rgb(254, 44, 85);
+  }
+}
+
+.outline {
+  background-color: #fff;
+  color: var(--primary);
+  border-color: var(--primary);
+  &:hover {
+    background: rgba(254, 44, 85, 0.08);
+  }
+  &:active {
+    background: rgba(254, 44, 85, 0.12);
+  }
+}
+
+.text {
+  background-color: #fff;
+  border-color: rgba(22, 24, 35, 0.12);
+  color: rgb(22, 24, 35);
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.rounded {
+  background-color: #fff;
+  border-color: rgba(22, 24, 35, 0.12);
+  border-radius: 999px;
+  color: rgb(22, 24, 35);
+
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.sm {
+  min-width: 96px;
+}
+.lg {
+  min-width: 148px;
+  width: 100%;
+  min-height: 48px;
+}
+
+.icon + .title,
+.title + .icon {
+  margin-left: 8px;
+}
+
+.icon {
+  min-width: 24px;
+  text-align: center;
+}
+
+.select {
+  background-color: transparent;
+  width: 100%;
+  height: 42px;
+  justify-content: flex-start;
+  border-radius: 0px;
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.separate {
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.nav {
+  height: 48px;
+  padding: 8px;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: transparent;
+  font-size: 2rem;
+  border-radius: 4px;
+  transition: background-color ease-in-out 200ms;
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
