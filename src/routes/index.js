@@ -10,8 +10,8 @@ import Discover from '~/pages/Discover';
 import Live from '~/pages/Live';
 
 const publicRoutes = [
-  { path: configs.routes.profile, component: Profile },
   { path: configs.routes.home, component: Home },
+  { path: configs.routes.profile, component: Profile },
   { path: configs.routes.following, component: Following },
   { path: configs.routes.live, component: Live },
   { path: configs.routes.upload, component: Upload, layout: HeaderOnly },
